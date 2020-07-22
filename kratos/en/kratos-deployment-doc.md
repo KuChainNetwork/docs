@@ -34,8 +34,7 @@ sudo usermod -aG docker ${USER}
 
 ```docker-compose
 curl -O 
-https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/e88d6ce94b2f833cd0748db5f4af1af145feaa37/docker-compose-new-chain.yml
-
+https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/f5998d5746bc9bc9a8bd2a91dd970a8113cf0963/docker-compose-new-chain.yml
 ```
 
 ###### bash script
@@ -50,7 +49,7 @@ docker-compose -f docker-compose-new-chain.yml up -d
 
 ```docker-compose
 curl -O 
-https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/f2c5335216c47f807418a875152401375f7a4b4f/docker-compose-join-chain.yml
+https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/f5998d5746bc9bc9a8bd2a91dd970a8113cf0963/docker-compose-join-chain.yml
 ```
 
 ###### bash script
@@ -67,7 +66,7 @@ docker-compose -f docker-compose-join-chain.yml  up -d
 
 ```docker-compose
 curl -O 
-https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/e88d6ce94b2f833cd0748db5f4af1af145feaa37/docker-compose-with-lite-node.yml
+https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/f5998d5746bc9bc9a8bd2a91dd970a8113cf0963/docker-compose-with-lite-node.yml
 ```
 
 ###### bash script
@@ -206,7 +205,7 @@ Init the chain，CHAIN_ID must equal with existed chain
 ktsd init --chain-id=kratos kratos
 ```
 
-Use the [kratos genesis.json](https://gist.githubusercontent.com/cain42/a0f469b2d1a84858ff9cfa10f58910c7/raw/b4b34bcd067936508413533655da0dbd3c31ed34/genesis.json) file instead of your node genesis.json file，default saved in `HOME/.ktsd/config` folder
+Use the [kratos genesis.json](https://gist.githubusercontent.com/cain42/a0f469b2d1a84858ff9cfa10f58910c7/raw/35754439ec88daf46a24b9b345069fd5f537ff31/genesis.json) file instead of your node genesis.json file，default saved in `HOME/.ktsd/config` folder
 
 change config.toml file，(also saved in `$HOME/.ktsd/config` folder).
 change persistent_peers = "" to `persistent_peers = "tendermint_node_id@ip:port"`
@@ -214,13 +213,13 @@ change private_peer_ids = "" to `private_peer_ids = "tendermint_node_id"`
 you can use` sed` cmd to replace text.
 
 ```bash
-sed -i "s/persistent_peers = \"\"/persistent_peers = \"09e184d5cdc27f401bae7bc2fb875c38e880186f@121.89.223.62:26656\"/g" "${HOME}/.ktsd/config/config.toml"
-sed -i "s/private_peer_ids = \"\"/private_peer_ids = \"09e184d5cdc27f401bae7bc2fb875c38e880186f\"/g" "${HOME}/.ktsd/config/config.toml"
+sed -i "s/persistent_peers = \"\"/persistent_peers = \"dc0f8bab9a85c216123f9d51a3a7fbe6411f40fa@121.89.216.155:26656\"/g" "${HOME}/.ktsd/config/config.toml"
+sed -i "s/private_peer_ids = \"\"/private_peer_ids = \"dc0f8bab9a85c216123f9d51a3a7fbe6411f40fa\"/g" "${HOME}/.ktsd/config/config.toml"
 ```
 
-- c1a092e843787862c7f96f7541f37c7cd2df187e@121.89.216.155:26656
-- 09e184d5cdc27f401bae7bc2fb875c38e880186f@121.89.223.62:26656
-- 99b964f7c802e498fe0652a0e3ed9deaa68475bf@121.89.210.210:26656
+- dc0f8bab9a85c216123f9d51a3a7fbe6411f40fa@121.89.216.155:26656
+- 7ad699b7f0397e3c501024fde93e228d3ea51b2b@121.89.223.62:26656
+- 5c633bbf8922dcf734a3f1213370433ee502f10a@121.89.210.210:26656
 
 `ip` is one of the Kratos node's  public IP address 
 `port` is the Tendermint P2P RPC port，default is 26656 
