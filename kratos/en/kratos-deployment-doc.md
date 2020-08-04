@@ -34,7 +34,7 @@ sudo usermod -aG docker ${USER}
 
 ```docker-compose
 curl -O 
-https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/f5998d5746bc9bc9a8bd2a91dd970a8113cf0963/docker-compose-new-chain.yml
+https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/d5bd7bc22232325c3c5b2db5df914127b3f436de/docker-compose-new-chain.yml
 ```
 
 ###### bash script
@@ -49,7 +49,7 @@ docker-compose -f docker-compose-new-chain.yml up -d
 
 ```docker-compose
 curl -O 
-https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/f5998d5746bc9bc9a8bd2a91dd970a8113cf0963/docker-compose-join-chain.yml
+https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/d5bd7bc22232325c3c5b2db5df914127b3f436de/docker-compose-join-chain.yml
 ```
 
 ###### bash script
@@ -66,7 +66,7 @@ docker-compose -f docker-compose-join-chain.yml  up -d
 
 ```docker-compose
 curl -O 
-https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/f5998d5746bc9bc9a8bd2a91dd970a8113cf0963/docker-compose-with-lite-node.yml
+https://gist.githubusercontent.com/cain42/e4b014a3fd21c84f935bf368177c02f2/raw/d5bd7bc22232325c3c5b2db5df914127b3f436de/docker-compose-with-lite-node.yml
 ```
 
 ###### bash script
@@ -205,7 +205,7 @@ Init the chain，CHAIN_ID must equal with existed chain
 ktsd init --chain-id=kratos kratos
 ```
 
-Use the [kratos genesis.json](https://gist.githubusercontent.com/cain42/a0f469b2d1a84858ff9cfa10f58910c7/raw/35754439ec88daf46a24b9b345069fd5f537ff31/genesis.json) file instead of your node genesis.json file，default saved in `HOME/.ktsd/config` folder
+Use the [kratos genesis.json](https://gist.githubusercontent.com/cain42/a0f469b2d1a84858ff9cfa10f58910c7/raw/bc8c90cb5494adba316cf10345eea1fe3ed7b2f1/genesis.json) file instead of your node genesis.json file，default saved in `HOME/.ktsd/config` folder
 
 change config.toml file，(also saved in `$HOME/.ktsd/config` folder).
 change persistent_peers = "" to `persistent_peers = "tendermint_node_id@ip:port"`
