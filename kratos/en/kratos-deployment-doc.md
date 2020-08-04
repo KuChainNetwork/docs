@@ -217,9 +217,9 @@ sed -i "s/persistent_peers = \"\"/persistent_peers = \"dc0f8bab9a85c216123f9d51a
 sed -i "s/private_peer_ids = \"\"/private_peer_ids = \"dc0f8bab9a85c216123f9d51a3a7fbe6411f40fa\"/g" "${HOME}/.ktsd/config/config.toml"
 ```
 
-- dc0f8bab9a85c216123f9d51a3a7fbe6411f40fa@121.89.216.155:26656
-- 7ad699b7f0397e3c501024fde93e228d3ea51b2b@121.89.223.62:26656
-- 5c633bbf8922dcf734a3f1213370433ee502f10a@121.89.210.210:26656
+- bdd5221e39d741b7cd22806a259b1ab36a5cb94a@121.89.216.155:26656
+- 0c5e1c7ba30451bb86ba87d3abd9d523b140d51a@121.89.223.62:26656
+- 3327976c43e1a518275ca25790ee50bf71de6a3e@121.89.210.210:26656
 
 `ip` is one of the Kratos node's  public IP address 
 `port` is the Tendermint P2P RPC port，default is 26656 
