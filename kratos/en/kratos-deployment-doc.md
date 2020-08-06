@@ -143,7 +143,7 @@ source ~/.profile
 ```bash
 cd kratos
 go mod vendor
-make
+make -e CORE_SYMBOL=kts -e MAIN_SYMBOL=kratos
 ```
 
 #### Scripts summary
@@ -165,7 +165,8 @@ echo "export GOROOT=/opt/go" >> ~/.profile
 echo "export GOPATH=/opt/gopath" >> ~/.profile
 echo "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin" >> ~/.profile
 source ~/.profile
-git clone https://github.com/KuChainNetwork/kratos.git && cd kratos && make
+git clone https://github.com/KuChainNetwork/kratos.git && cd kratos && make -e CORE_SYMBOL=kts -e MAIN_SYMBOL=kratos
+
 ```
 
 ***
