@@ -219,8 +219,8 @@ sed -i "s/private_peer_ids = \"\"/private_peer_ids = \"dc0f8bab9a85c216123f9d51a
 ```
 
 - bdd5221e39d741b7cd22806a259b1ab36a5cb94a@121.89.216.155:26656
-- 0c5e1c7ba30451bb86ba87d3abd9d523b140d51a@121.89.223.62:26656
-- 3327976c43e1a518275ca25790ee50bf71de6a3e@121.89.210.210:26656
+- 8c4ba0aa74f772c9656dbde739699367aded1ddd@121.89.223.62:26656
+- 979b12b68cf37757147f0403540aa2703fe6a7fe@121.89.210.210:26656
 
 `ip` is one of the Kratos node's  public IP address 
 `port` is the Tendermint P2P RPC port，default is 26656 
