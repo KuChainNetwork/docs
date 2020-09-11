@@ -214,13 +214,13 @@ change private_peer_ids = "" to `private_peer_ids = "tendermint_node_id"`
 you can use` sed` cmd to replace text.
 
 ```bash
-sed -i "s/persistent_peers = \"\"/persistent_peers = \"dc0f8bab9a85c216123f9d51a3a7fbe6411f40fa@121.89.216.155:26656\"/g" "${HOME}/.ktsd/config/config.toml"
-sed -i "s/private_peer_ids = \"\"/private_peer_ids = \"dc0f8bab9a85c216123f9d51a3a7fbe6411f40fa\"/g" "${HOME}/.ktsd/config/config.toml"
+sed -i "s/persistent_peers = \"\"/persistent_peers = \"bdd5221e39d741b7cd22806a259b1ab36a5cb94a@121.89.216.155:26656\"/g" "${HOME}/.ktsd/config/config.toml"
+sed -i "s/private_peer_ids = \"\"/private_peer_ids = \"bdd5221e39d741b7cd22806a259b1ab36a5cb94a\"/g" "${HOME}/.ktsd/config/config.toml"
 ```
 
 - bdd5221e39d741b7cd22806a259b1ab36a5cb94a@121.89.216.155:26656
-- 8c4ba0aa74f772c9656dbde739699367aded1ddd@121.89.223.62:26656
-- 979b12b68cf37757147f0403540aa2703fe6a7fe@121.89.210.210:26656
+- e7f57878a7068792372eea5985fe26e4f164ec5c@121.89.223.62:26656
+- e0d4ca5aefdd2b348c981b4b1cc215b32bbe4ed9@121.89.210.210:26656
 
 `ip` is one of the Kratos node's  public IP address 
 `port` is the Tendermint P2P RPC port，default is 26656 
